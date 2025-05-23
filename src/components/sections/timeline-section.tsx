@@ -97,7 +97,7 @@ const TimelineEvent = ({ item, index }: { item: TimelineItem, index: number }) =
   const cardClasses = `p-4 rounded-2xl my-4 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card 
     ${isEven 
       ? 'md:col-start-1 md:col-span-3' 
-      : 'md:col-start-7 md:col-span-3 md:ml-auto'
+      : 'md:col-start-7 md:col-span-3'
     }`;
     
   const iconContainerClasses = "hidden md:block col-start-5 col-end-6 md:mx-auto relative";
