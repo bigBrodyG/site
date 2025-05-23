@@ -18,7 +18,7 @@ export default function HeroSection() {
           <div className="inline-block mb-8">
             <Image 
               src="https://placehold.co/120x120.png" 
-              alt="Foto Profilo Giordano Fornari" 
+              alt="Giordano Fornari Profile Picture" 
               width={120} 
               height={120} 
               data-ai-hint="profile person"
@@ -27,24 +27,24 @@ export default function HeroSection() {
           </div>
           
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
-            <span className="block text-foreground">Ciao, sono </span>
+            <span className="block text-foreground">Hi, I'm </span>
             <span className="block text-primary animate-text-gradient bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               Giordano Fornari
             </span>
           </h1>
           <p className="mt-6 max-w-xl mx-auto text-lg sm:text-xl text-muted-foreground leading-relaxed">
-            Sono uno studente di informatica e appassionato di tecnologia, con un forte interesse per la scienza e la cybersecurity. Esplora il mio percorso e i miei progetti.
+            I'm a computer science student and technology enthusiast, with a strong interest in science and cybersecurity. Explore my journey and my projects.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Link href="#projects" passHref>
               <Button size="lg" className="rounded-full text-lg px-8 py-6 shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl group">
-                I Miei Progetti
+                My Projects
                 <ArrowDown className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-y-1" />
               </Button>
             </Link>
             <Link href="#contact" passHref>
               <Button variant="outline" size="lg" className="rounded-full text-lg px-8 py-6 border-primary text-primary hover:bg-primary/10 shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-                Contattami
+                Contact Me
               </Button>
             </Link>
           </div>

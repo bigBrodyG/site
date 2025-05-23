@@ -13,9 +13,9 @@ const NavLink = ({ href, children }: { href: string; children: React.ReactNode }
 
 export default function Header() {
   const navItems = [
-    { href: "#projects", label: "Progetti", icon: <Briefcase className="mr-2 h-4 w-4 sm:hidden" /> },
-    { href: "#timeline", label: "Percorso", icon: <Milestone className="mr-2 h-4 w-4 sm:hidden" /> },
-    { href: "#contact", label: "Contatti", icon: <MessageSquare className="mr-2 h-4 w-4 sm:hidden" /> },
+    { href: "#projects", label: "Projects", icon: <Briefcase className="mr-2 h-4 w-4 sm:hidden" /> },
+    { href: "#timeline", label: "Timeline", icon: <Milestone className="mr-2 h-4 w-4 sm:hidden" /> },
+    { href: "#contact", label: "Contact", icon: <MessageSquare className="mr-2 h-4 w-4 sm:hidden" /> },
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function Header() {
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
-                <span className="sr-only">Apri menu</span>
+                <span className="sr-only">Open menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[280px] bg-background p-6">

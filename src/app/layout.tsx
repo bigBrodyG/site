@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Giordano Fornari | Il Mio Percorso',
-  description: 'Portfolio personale di Giordano Fornari, studente di informatica, appassionato di scienza, tecnologia e cybersecurity.',
+  title: 'Giordano Fornari | My Journey',
+  description: 'Personal portfolio of Giordano Fornari, a computer science student passionate about science, technology, and cybersecurity.',
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="it" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en-US" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="antialiased flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">

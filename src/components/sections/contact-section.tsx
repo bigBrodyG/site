@@ -19,9 +19,9 @@ import { MessageSquare, Send } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 const contactFormSchema = z.object({
-  name: z.string().min(2, { message: "Il nome deve contenere almeno 2 caratteri." }),
-  email: z.string().email({ message: "Inserisci un indirizzo email valido." }),
-  message: z.string().min(10, { message: "Il messaggio deve contenere almeno 10 caratteri." }).max(500, {message: "Il messaggio non deve superare i 500 caratteri."}),
+  name: z.string().min(2, { message: "Name must be at least 2 characters long." }),
+  email: z.string().email({ message: "Please enter a valid email address." }),
+  message: z.string().min(10, { message: "Message must be at least 10 characters long." }).max(500, {message: "Message must not exceed 500 characters."}),
 });
 
 type ContactFormValues = z.infer<typeof contactFormSchema>;
@@ -40,14 +40,14 @@ export default function ContactSection() {
   async function onSubmit(data: ContactFormValues) {
     // In a real app, you'd send this data to a backend or email service.
     // For this demo, we'll simulate a successful submission.
-    console.log("Modulo di contatto inviato:", data);
+    console.log("Contact form submitted:", data);
     
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
 
     toast({
-      title: "Messaggio Inviato!",
-      description: "Grazie per avermi contattato. Ti risponderò al più presto.",
+      title: "Message Sent!",
+      description: "Thank you for contacting me. I'll get back to you as soon as possible.",
       variant: "default",
     });
     form.reset(); // Reset form after submission
@@ -59,17 +59,17 @@ export default function ContactSection() {
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-primary flex items-center justify-center">
             <MessageSquare className="mr-3 h-8 w-8 text-accent" />
-            Contattami
+            Contact Me
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Hai una domanda, un'idea per un progetto o vuoi semplicemente salutarmi? Non esitare a scrivermi!
+            Have a question, a project idea, or just want to say hello? Feel free to write to me!
           </p>
         </div>
 
         <Card className="max-w-2xl mx-auto rounded-2xl shadow-xl p-2 sm:p-4 bg-card">
           <CardHeader>
-            <CardTitle className="text-2xl text-center font-semibold text-primary">Inviami un messaggio</CardTitle>
-            <CardDescription className="text-center text-muted-foreground">Sono sempre aperto a discutere nuovi progetti o opportunità.</CardDescription>
+            <CardTitle className="text-2xl text-center font-semibold text-primary">Send Me a Message</CardTitle>
+            <CardDescription className="text-center text-muted-foreground">I'm always open to discussing new projects or opportunities.</CardDescription>
           </CardHeader>
           <CardContent>
             <Form {...form}>
@@ -79,9 +79,9 @@ export default function ContactSection() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-foreground">Nome Completo</FormLabel>
+                      <FormLabel className="text-foreground">Full Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="Il Tuo Nome" {...field} className="rounded-xl h-12 text-base focus:ring-accent" />
+                        <Input placeholder="Your Name" {...field} className="rounded-xl h-12 text-base focus:ring-accent" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -92,9 +92,9 @@ export default function ContactSection() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-foreground">Indirizzo Email</FormLabel>
+                      <FormLabel className="text-foreground">Email Address</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="tua.email@esempio.com" {...field} className="rounded-xl h-12 text-base focus:ring-accent" />
+                        <Input type="email" placeholder="your.email@example.com" {...field} className="rounded-xl h-12 text-base focus:ring-accent" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -105,10 +105,10 @@ export default function ContactSection() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-foreground">Messaggio</FormLabel>
+                      <FormLabel className="text-foreground">Message</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Parlami del tuo progetto o della tua richiesta..."
+                          placeholder="Tell me about your project or request..."
                           className="rounded-xl min-h-[150px] text-base focus:ring-accent"
                           {...field}
                         />
@@ -118,7 +118,7 @@ export default function ContactSection() {
                   )}
                 />
                 <Button type="submit" size="lg" className="w-full rounded-full text-lg py-6 shadow-lg hover:shadow-xl transition-shadow duration-300 group" disabled={form.formState.isSubmitting}>
-                  {form.formState.isSubmitting ? "Invio in corso..." : "Invia Messaggio"}
+                  {form.formState.isSubmitting ? "Sending..." : "Send Message"}
                   {!form.formState.isSubmitting && <Send className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />}
                 </Button>
               </form>

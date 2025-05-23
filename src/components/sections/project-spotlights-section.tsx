@@ -9,31 +9,31 @@ import { Badge } from '@/components/ui/badge';
 const projectsData: Project[] = [
   {
     id: '1',
-    title: 'Sistemi Embedded: Arduino & ESP32',
-    description: "Esplorazione e sviluppo con microcontrollori Arduino ed ESP32, approfondendo l'interazione hardware-software.",
-    longDescription: "Dal 2020 al 2024, ho dedicato tempo all'apprendimento e alla sperimentazione con sistemi embedded, utilizzando piattaforme come Arduino ed ESP32 per realizzare piccoli progetti e comprendere il funzionamento dei microcontrollori.",
+    title: 'Embedded Systems: Arduino & ESP32',
+    description: "Exploration and development with Arduino and ESP32 microcontrollers, delving into hardware-software interaction.",
+    longDescription: "From 2020 to 2024, I dedicated time to learning and experimenting with embedded systems, using platforms like Arduino and ESP32 to create small projects and understand microcontroller functionality.",
     image: 'https://placehold.co/600x400.png',
     imageAiHint: 'microcontroller circuit',
-    tags: ['Arduino', 'ESP32', 'Microcontrollori', 'C/C++', 'Elettronica'],
+    tags: ['Arduino', 'ESP32', 'Microcontrollers', 'C/C++', 'Electronics'],
   },
   {
     id: '2',
-    title: 'Percorso in Cybersecurity e OliCyber',
-    description: 'Approfondimento della cybersecurity e partecipazione alla competizione OliCyber, con preparazione per future sfide.',
-    longDescription: "A partire dal 2024, la cybersecurity è diventata il mio interesse principale. Ho partecipato a OliCyber, classificandomi 69° a livello nazionale e partecipando alla finale (75°). Attualmente mi preparo per CyberChallenge.IT.",
+    title: 'Cybersecurity Journey & OliCyber',
+    description: 'Deepening my knowledge of cybersecurity and participating in the OliCyber competition, preparing for future challenges.',
+    longDescription: "Starting in 2024, cybersecurity became my main interest. I participated in OliCyber, placing 69th nationally and reaching the finals (75th). I am currently preparing for CyberChallenge.IT.",
     image: 'https://placehold.co/600x400.png',
     imageAiHint: 'cyber security',
     tags: ['Cybersecurity', 'Ethical Hacking', 'OliCyber', 'CTF', 'Network Security'],
   },
   {
     id: '3',
-    title: 'Portfolio Personale (Questo Sito)',
-    description: 'Questo sito web, costruito per presentare il mio percorso e le mie competenze.',
-    longDescription: "Questo portfolio personale è stato sviluppato utilizzando Next.js, TypeScript, ShadCN UI e Tailwind CSS per mettere in pratica le mie competenze di sviluppo web e presentare la mia storia.",
+    title: 'Personal Portfolio (This Site)',
+    description: 'This website, built to showcase my journey and skills.',
+    longDescription: "This personal portfolio was developed using Next.js, TypeScript, ShadCN UI, and Tailwind CSS to apply my web development skills and present my story.",
     image: 'https://placehold.co/600x400.png',
     imageAiHint: 'website design code',
-    sourceCodeUrl: '#', // Assuming '#' means no link for now, user can update
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Sviluppo Web'],
+    sourceCodeUrl: '#', 
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Web Development'],
   },
 ];
 
@@ -43,8 +43,8 @@ const ProjectCard = ({ project }: { project: Project }) => (
       <Image
         src={project.image}
         alt={project.title}
-        fill={true} // Changed from layout="fill" for Next.js 13+
-        style={{ objectFit: 'cover' }} // Changed from objectFit="cover"
+        fill={true} 
+        style={{ objectFit: 'cover' }} 
         data-ai-hint={project.imageAiHint}
         className="transition-transform duration-500 group-hover:scale-105"
       />
@@ -67,19 +67,19 @@ const ProjectCard = ({ project }: { project: Project }) => (
       {project.liveDemoUrl && (
         <Button asChild variant="default" className="rounded-full shadow-md hover:shadow-lg transition-shadow duration-300 w-full sm:w-auto">
           <Link href={project.liveDemoUrl} target="_blank" rel="noopener noreferrer">
-            <ExternalLink className="mr-2 h-4 w-4" /> Demo Live
+            <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
           </Link>
         </Button>
       )}
       {project.sourceCodeUrl && (
         <Button asChild variant="outline" className="rounded-full border-primary text-primary hover:bg-primary/10 w-full sm:w-auto">
           <Link href={project.sourceCodeUrl} target="_blank" rel="noopener noreferrer">
-            <Github className="mr-2 h-4 w-4" /> Codice Sorgente
+            <Github className="mr-2 h-4 w-4" /> Source Code
           </Link>
         </Button>
       )}
       {!project.liveDemoUrl && !project.sourceCodeUrl && (
-         <p className="text-sm text-muted-foreground">Dettagli in arrivo.</p>
+         <p className="text-sm text-muted-foreground">Details coming soon.</p>
       )}
     </CardFooter>
   </Card>
@@ -92,10 +92,10 @@ export default function ProjectSpotlightsSection() {
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-primary flex items-center justify-center">
             <Briefcase className="mr-3 h-8 w-8 text-accent" />
-            I Miei Progetti
+            My Projects
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Una raccolta dei miei lavori, che mostrano le mie competenze e la mia passione per lo sviluppo.
+            A collection of my work, showcasing my skills and passion for development.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">

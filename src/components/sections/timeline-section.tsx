@@ -8,86 +8,86 @@ const timelineData: TimelineItem[] = [
   {
     id: '1',
     type: 'education',
-    title: 'Inizio Studi Scientifici',
-    institution: 'Istituto Tecnico',
+    title: 'Beginning of Scientific Studies',
+    institution: 'Technical Institute',
     date: '2021',
-    description: 'Inizio del percorso con fisica e chimica, partecipando attivamente alle lezioni proposte dal mio istituto.',
+    description: 'Started my journey with physics and chemistry, actively participating in lessons offered by my institute.',
     icon: FlaskConical,
   },
   {
     id: '2',
     type: 'achievement',
-    title: 'Olimpiadi della Chimica',
-    institution: 'Livello Nazionale',
+    title: 'Chemistry Olympiads',
+    institution: 'National Level',
     date: '2023',
-    description: 'Partecipazione alle Olimpiadi della Chimica.',
+    description: 'Participation in the Chemistry Olympiads.',
     icon: Award,
   },
   {
     id: '3',
     type: 'achievement',
-    title: 'Gare di Matematica Bocconi',
-    institution: 'Università Bocconi',
+    title: 'Bocconi Math Competitions',
+    institution: 'Bocconi University',
     date: '2023 & 2025',
-    description: 'Partecipazione alle gare di matematica organizzate dalla Bocconi.',
+    description: 'Participation in math competitions organized by Bocconi University.',
     icon: Calculator,
   },
   {
     id: '4',
     type: 'work',
-    title: 'Sviluppo Sistemi Embedded',
-    institution: 'Progetti Personali',
+    title: 'Embedded Systems Development',
+    institution: 'Personal Projects',
     date: '2020 - 2024',
-    description: 'Lavoro e sperimentazione con microcontrollori come Arduino ed ESP32.',
+    description: 'Working and experimenting with microcontrollers like Arduino and ESP32.',
     icon: Cpu,
   },
   {
     id: '5',
     type: 'education',
-    title: 'Interesse per la Cybersecurity',
+    title: 'Interest in Cybersecurity',
     date: '2024',
-    description: 'Scoperta e inizio approfondimento nel campo della cybersecurity, che è diventato il mio principale interesse.',
+    description: 'Discovered and began exploring the field of cybersecurity, which has become my main interest.',
     icon: Shield,
   },
   {
     id: '6',
     type: 'achievement',
-    title: 'OliCyber - Finale Nazionale',
-    institution: 'Torino',
+    title: 'OliCyber - National Finals',
+    institution: 'Turin',
     date: '2025',
-    description: 'Classificato 69° in Italia e partecipazione alla fase finale a Torino, classificandomi 75°.',
+    description: 'Placed 69th in Italy and participated in the final phase in Turin, placing 75th.',
     icon: Award,
   },
   {
     id: '7',
     type: 'education',
-    title: 'Preparazione CyberChallenge.IT',
-    institution: 'Università di Parma',
-    date: 'In corso',
-    description: 'Preparazione per CyberChallenge.IT, con l’obiettivo di migliorare le competenze in ethical hacking e partecipare all’edizione 2026.',
+    title: 'CyberChallenge.IT Preparation',
+    institution: 'University of Parma',
+    date: 'Ongoing',
+    description: 'Preparing for CyberChallenge.IT, aiming to improve my ethical hacking skills and participate in the 2026 edition.',
     icon: Target,
   },
   {
     id: '8',
     type: 'achievement',
-    title: 'Primo Posto - Giochi di Archimede',
-    institution: 'Presso il mio Istituto (Triennio)',
+    title: 'First Place - Archimedes Games',
+    institution: 'At my Institute (Three-year period)',
     date: '2025',
-    description: 'Classificato primo nel mio istituto nei Giochi di Archimede per il triennio.',
+    description: 'Ranked first in my institute in the Archimedes Games for the three-year period.',
     icon: Award,
   },
 ];
 
 const skillsData: Skill[] = [
-  { id: 's2', name: 'Programmazione C', level: 95, icon: Code, description: "Competenze avanzate grazie agli insegnamenti del Prof. Ramon Ugolotti." },
-  { id: 's5', name: 'Python', level: 85, icon: Code, description: "Utilizzo per scripting, automazione e sviluppo." },
-  { id: 's6', name: 'JavaScript', level: 40, icon: Code, description: "Sviluppo web front-end e interattività." },
-  { id: 's8', name: 'Matematica', level: 95, icon: Calculator, description: "Solide basi per problem solving e analisi." },
-  { id: 's3', name: 'Sistemi Embedded (Arduino, ESP32)', level: 50, icon: Cpu, description: "Progettazione e programmazione di microcontrollori." },
-  { id: 's7', name: 'Fisica e Chimica', level: 90, icon: FlaskConical, description: "Comprensione dei principi scientifici fondamentali." },
-  { id: 's4', name: 'Linux (Arch Linux, Hyprland)', level: 85, icon: Terminal, description: "Amministrazione di sistema e personalizzazione avanzata." },
-  { id: 's1', name: 'Cybersecurity', level: 60, icon: Shield, description: "Studio della sicurezza informatica e difesa delle reti." },
-  { id: 's9', name: 'Ethical Hacking', level: 25, icon: KeyRound, description: "Tecniche di penetration testing e vulnerability assessment." },
+  { id: 's2', name: 'C Programming', level: 95, icon: Code, description: "Advanced skills thanks to the teachings of Prof. Ramon Ugolotti." },
+  { id: 's5', name: 'Python', level: 85, icon: Code, description: "Used for scripting, automation, and development." },
+  { id: 's6', name: 'JavaScript', level: 40, icon: Code, description: "Front-end web development and interactivity." },
+  { id: 's8', name: 'Mathematics', level: 95, icon: Calculator, description: "Solid foundation for problem-solving and analysis." },
+  { id: 's3', name: 'Embedded Systems (Arduino, ESP32)', level: 50, icon: Cpu, description: "Design and programming of microcontrollers." },
+  { id: 's7', name: 'Physics & Chemistry', level: 90, icon: FlaskConical, description: "Understanding of fundamental scientific principles." },
+  { id: 's4', name: 'Linux (Arch Linux, Hyprland)', level: 85, icon: Terminal, description: "System administration and advanced customization." },
+  { id: 's1', name: 'Cybersecurity', level: 60, icon: Shield, description: "Study of information security and network defense." },
+  { id: 's9', name: 'Ethical Hacking', level: 25, icon: KeyRound, description: "Penetration testing and vulnerability assessment techniques." },
 ];
 
 const TimelineEvent = ({ item, index }: { item: TimelineItem, index: number }) => {
@@ -145,10 +145,10 @@ export default function TimelineSection() {
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-primary flex items-center justify-center">
             <Milestone className="mr-3 h-8 w-8 text-accent" />
-            Il Mio Percorso e Competenze
+            My Journey and Skills
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Ripercorrendo la mia strada attraverso istruzione, esperienze e traguardi.
+            Retracing my path through education, experiences, and achievements.
           </p>
         </div>
 
@@ -161,7 +161,7 @@ export default function TimelineSection() {
         <div className="mt-16 sm:mt-20">
           <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-primary text-center mb-10 sm:mb-12 flex items-center justify-center">
             <Star className="mr-3 h-7 w-7 text-accent" />
-            Competenze Chiave
+            Key Skills
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {skillsData.map((skill) => {
@@ -187,4 +187,3 @@ export default function TimelineSection() {
     </section>
   );
 }
-
