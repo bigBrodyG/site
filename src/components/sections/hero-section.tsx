@@ -10,24 +10,29 @@ import type { CarouselImage } from '@/types';
 
 const backgroundCarouselImages: CarouselImage[] = [
   { 
-    src: '/background-images/tech-abstract-1.jpg', 
-    alt: 'Abstract technology background with glowing lines', 
-    hint: 'abstract technology' 
+    src: '/background-images/Tide-iswanto-arif.jpg', 
+    alt: 'Tide by Iswanto Arif', 
+    hint: 'ocean tide' 
   },
   { 
-    src: '/background-images/developer-workspace.jpg', 
-    alt: 'Modern developer workspace with multiple monitors', 
-    hint: 'developer workspace' 
+    src: '/background-images/Thomas-kinkade-bridge.jpg', 
+    alt: 'Bridge by Thomas Kinkade', 
+    hint: 'classic bridge' 
   },
   { 
-    src: '/background-images/futuristic-circuits.jpg', 
-    alt: 'Futuristic circuit board patterns', 
-    hint: 'futuristic circuits'
+    src: '/background-images/Sway-monokai.png', 
+    alt: 'Sway window manager with Monokai theme', 
+    hint: 'linux desktop'
   },
   {
-    src: '/background-images/coding-screen-close-up.jpg',
-    alt: 'Close-up of a screen with lines of code',
-    hint: 'coding screen'
+    src: '/background-images/Sway-gruvbox.png',
+    alt: 'Sway window manager with Gruvbox theme',
+    hint: 'code editor'
+  },
+  {
+    src: '/background-images/Sun-Setting-Horizon.png',
+    alt: 'Sun setting over the horizon',
+    hint: 'sunset horizon'
   }
 ];
 
