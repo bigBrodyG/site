@@ -10,29 +10,54 @@ import type { CarouselImage } from '@/types';
 
 const backgroundCarouselImages: CarouselImage[] = [
   { 
-    src: '/background-images/Tide-iswanto-arif.jpg', 
-    alt: 'Tide by Iswanto Arif', 
-    hint: 'ocean tide' 
+    src: '/background-images/bkg1.png', 
+    alt: 'Background Image 1', 
+    hint: 'abstract background' 
   },
   { 
-    src: '/background-images/Thomas-kinkade-bridge.jpg', 
-    alt: 'Bridge by Thomas Kinkade', 
-    hint: 'classic bridge' 
+    src: '/background-images/bkg2.png', 
+    alt: 'Background Image 2', 
+    hint: 'scenic landscape' 
   },
   { 
-    src: '/background-images/Sway-monokai.png', 
-    alt: 'Sway window manager with Monokai theme', 
-    hint: 'linux desktop'
+    src: '/background-images/bkg3.png', 
+    alt: 'Background Image 3', 
+    hint: 'technology theme'
   },
   {
-    src: '/background-images/Sway-gruvbox.png',
-    alt: 'Sway window manager with Gruvbox theme',
-    hint: 'code editor'
+    src: '/background-images/bkg4.png',
+    alt: 'Background Image 4',
+    hint: 'nature pattern'
   },
   {
-    src: '/background-images/Sun-Setting-Horizon.png',
-    alt: 'Sun setting over the horizon',
-    hint: 'sunset horizon'
+    src: '/background-images/bkg5.png',
+    alt: 'Background Image 5',
+    hint: 'urban city'
+  },
+  {
+    src: '/background-images/bkg6.png',
+    alt: 'Background Image 6',
+    hint: 'code snippet'
+  },
+  {
+    src: '/background-images/bkg7.png',
+    alt: 'Background Image 7',
+    hint: 'workspace inspiration'
+  },
+  {
+    src: '/background-images/bkg8.png',
+    alt: 'Background Image 8',
+    hint: 'futuristic design'
+  },
+  {
+    src: '/background-images/bkg9.png',
+    alt: 'Background Image 9',
+    hint: 'artistic texture'
+  },
+  {
+    src: '/background-images/bkg10.png',
+    alt: 'Background Image 10',
+    hint: 'minimalist style'
   }
 ];
 
