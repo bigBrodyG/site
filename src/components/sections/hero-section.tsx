@@ -17,7 +17,7 @@ export default function HeroSection() {
         <div className="max-w-3xl mx-auto">
           <div className="inline-block mb-8">
             <Image 
-              src="https://placehold.co/120x120.png" 
+              src="/io.png" 
               alt="Giordano Fornari Profile Picture" 
               width={120} 
               height={120} 
