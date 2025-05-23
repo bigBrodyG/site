@@ -43,7 +43,7 @@ export default function HeroSection() {
         <div className="max-w-3xl mx-auto">
           <div className="inline-block mb-8">
             <Image
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8UHJvamVjdHxlbnwwfHx8fDE3NDgwMTE1NzR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="https://avatars.githubusercontent.com/u/152636135?v=4"
               alt="Giordano Fornari Profile Picture"
               width={120}
               height={120}
