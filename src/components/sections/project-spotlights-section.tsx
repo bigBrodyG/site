@@ -32,7 +32,7 @@ const projectsData: Project[] = [
     longDescription: "This personal portfolio was developed using Next.js, TypeScript, ShadCN UI, and Tailwind CSS to apply my web development skills and present my story.",
     image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxXZWJzaXRlfGVufDB8fHx8MTc0ODAwOTc0NHww&ixlib=rb-4.1.0&q=80&w=1080',
     imageAiHint: 'website design code',
-    sourceCodeUrl: '#', // Assuming you might add a link to the repo for this site later
+    sourceCodeUrl: 'https://github.com/bigBrodyG/site',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Web Development'],
   },
 ];
