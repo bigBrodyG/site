@@ -80,14 +80,14 @@ const timelineData: TimelineItem[] = [
 
 const skillsData: Skill[] = [
   { id: 's2', name: 'Programmazione C', level: 95, icon: Code, description: "Competenze avanzate grazie agli insegnamenti del Prof. Ramon Ugolotti." },
-  { id: 's3', name: 'Sistemi Embedded (Arduino, ESP32)', level: 85, icon: Cpu },
-  { id: 's4', name: 'Linux (Arch Linux, Hyprland)', level: 90, icon: Terminal },
-  { id: 's5', name: 'Python', level: 70, icon: Code },
-  { id: 's6', name: 'JavaScript', level: 70, icon: Code },
-  { id: 's7', name: 'Fisica e Chimica', level: 75, icon: FlaskConical },
-  { id: 's8', name: 'Matematica', level: 80, icon: Calculator },
-  { id: 's1', name: 'Cybersecurity', level: 75, icon: Shield },
-  { id: 's9', name: 'Ethical Hacking', level: 70, icon: KeyRound },
+  { id: 's5', name: 'Python', level: 85, icon: Code },
+  { id: 's6', name: 'JavaScript', level: 40, icon: Code },
+  { id: 's8', name: 'Matematica', level: 95, icon: Calculator },
+  { id: 's7', name: 'Fisica e Chimica', level: 90, icon: FlaskConical },
+  { id: 's3', name: 'Sistemi Embedded (Arduino, ESP32)', level: 70, icon: Cpu },
+  { id: 's4', name: 'Linux (Arch Linux, Hyprland)', level: 85, icon: Terminal },
+  { id: 's1', name: 'Cybersecurity', level: 60, icon: Shield },
+  { id: 's9', name: 'Ethical Hacking', level: 35, icon: KeyRound },
 ];
 
 const TimelineEvent = ({ item, index }: { item: TimelineItem, index: number }) => {
@@ -96,7 +96,7 @@ const TimelineEvent = ({ item, index }: { item: TimelineItem, index: number }) =
 
   const cardClasses = `p-4 rounded-2xl my-4 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card 
     ${isEven 
-      ? 'md:col-start-1 md:col-span-3 md:mr-auto' 
+      ? 'md:col-start-1 md:col-span-3' 
       : 'md:col-start-7 md:col-span-3 md:ml-auto'
     }`;
     
