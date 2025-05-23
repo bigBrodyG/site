@@ -24,6 +24,7 @@ const projectsData: Project[] = [
     image: 'https://images.unsplash.com/photo-1533709752211-118fcaf03312?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8Q3liZXJ8ZW58MHx8fHwxNzQ3OTM0Njc5fDA&ixlib=rb-4.1.0&q=80&w=1080',
     imageAiHint: 'cyber security',
     tags: ['Cybersecurity', 'Ethical Hacking', 'OliCyber', 'CTF', 'Network Security'],
+    sourceCodeUrl: 'https://github.com/bigBrodyG/cybersectraining',
   },
   {
     id: '3',
