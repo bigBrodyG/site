@@ -10,27 +10,27 @@ import type { CarouselImage } from '@/types';
 
 const backgroundCarouselImages: CarouselImage[] = [
   { 
-    src: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80', 
+    src: '/background-images/code-laptop.jpg', 
     alt: 'Laptop with code on screen, dark theme', 
     hint: 'code laptop' 
   },
   { 
-    src: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80', 
+    src: '/background-images/retro-computing.jpg', 
     alt: 'Retro computing setup with vibrant colors', 
     hint: 'retro computing' 
   },
   { 
-    src: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80', 
+    src: '/background-images/abstract-technology.jpg', 
     alt: 'Abstract technological background with light trails', 
     hint: 'abstract technology'
   },
   {
-    src: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    src: '/background-images/developer-coding.jpg',
     alt: 'Developer working on multiple screens',
     hint: 'developer coding'
   },
   {
-    src: 'https://images.unsplash.com/photo-1531297484001-80022131c5a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    src: '/background-images/modern-desk.jpg',
     alt: 'Modern desk setup with sleek laptop',
     hint: 'modern desk'
   }
@@ -48,7 +48,7 @@ export default function HeroSection() {
         <div className="max-w-3xl mx-auto">
           <div className="inline-block mb-8">
             <Image
-              src="/io.png"
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8UHJvamVjdHxlbnwwfHx8fDE3NDgwMTE1NzR8MA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Giordano Fornari Profile Picture"
               width={120}
               height={120}
@@ -96,4 +96,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
