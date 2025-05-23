@@ -10,29 +10,24 @@ import type { CarouselImage } from '@/types';
 
 const backgroundCarouselImages: CarouselImage[] = [
   { 
-    src: '/background-images/code-laptop.jpg', 
-    alt: 'Laptop with code on screen, dark theme', 
-    hint: 'code laptop' 
+    src: '/background-images/tech-abstract-1.jpg', 
+    alt: 'Abstract technology background with glowing lines', 
+    hint: 'abstract technology' 
   },
   { 
-    src: '/background-images/retro-computing.jpg', 
-    alt: 'Retro computing setup with vibrant colors', 
-    hint: 'retro computing' 
+    src: '/background-images/developer-workspace.jpg', 
+    alt: 'Modern developer workspace with multiple monitors', 
+    hint: 'developer workspace' 
   },
   { 
-    src: '/background-images/abstract-technology.jpg', 
-    alt: 'Abstract technological background with light trails', 
-    hint: 'abstract technology'
+    src: '/background-images/futuristic-circuits.jpg', 
+    alt: 'Futuristic circuit board patterns', 
+    hint: 'futuristic circuits'
   },
   {
-    src: '/background-images/developer-coding.jpg',
-    alt: 'Developer working on multiple screens',
-    hint: 'developer coding'
-  },
-  {
-    src: '/background-images/modern-desk.jpg',
-    alt: 'Modern desk setup with sleek laptop',
-    hint: 'modern desk'
+    src: '/background-images/coding-screen-close-up.jpg',
+    alt: 'Close-up of a screen with lines of code',
+    hint: 'coding screen'
   }
 ];
 
