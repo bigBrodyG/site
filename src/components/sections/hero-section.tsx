@@ -35,7 +35,7 @@ export default function HeroSection() {
             </span>
           </h1>
           <p className="mt-6 max-w-xl mx-auto text-lg sm:text-xl text-muted-foreground leading-relaxed">
-            I'm a computer science student and technology enthusiast, with a strong interest in science and cybersecurity. Explore my journey and my projects.
+            I'm a Computer Science student and technology enthusiast, with a strong interest in science and cybersecurity. Explore my journey and my projects.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Link href="#projects" passHref>
@@ -76,3 +76,4 @@ export default function HeroSection() {
     </section>
   );
 }
+
