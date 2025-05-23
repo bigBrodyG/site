@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from 'next/link';
@@ -18,7 +17,7 @@ export default function HeroSection() {
         <div className="max-w-3xl mx-auto">
           <div className="inline-block mb-8">
             <Image
-              src="/io.png" 
+              src="https://avatars.githubusercontent.com/u/152636135?v=4"
               alt="Giordano Fornari Profile Picture"
               width={120}
               height={120}
@@ -76,4 +75,3 @@ export default function HeroSection() {
     </section>
   );
 }
-
