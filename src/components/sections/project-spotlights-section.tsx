@@ -21,7 +21,7 @@ const projectsData: Project[] = [
     title: 'Cybersecurity Journey & OliCyber',
     description: 'Deepening my knowledge of cybersecurity and participating in the OliCyber competition, preparing for future challenges.',
     longDescription: "Starting in 2024, cybersecurity became my main interest. I participated in OliCyber, placing 69th nationally and reaching the finals (75th). I am currently preparing for CyberChallenge.IT.",
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1533709752211-118fcaf03312?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8Q3liZXJ8ZW58MHx8fHwxNzQ3OTM0Njc5fDA&ixlib=rb-4.1.0&q=80&w=1080',
     imageAiHint: 'cyber security',
     tags: ['Cybersecurity', 'Ethical Hacking', 'OliCyber', 'CTF', 'Network Security'],
   },
@@ -32,7 +32,7 @@ const projectsData: Project[] = [
     longDescription: "This personal portfolio was developed using Next.js, TypeScript, ShadCN UI, and Tailwind CSS to apply my web development skills and present my story.",
     image: 'https://placehold.co/600x400.png',
     imageAiHint: 'website design code',
-    sourceCodeUrl: '#',
+    sourceCodeUrl: '#', // Assuming you might add a link to the repo for this site later
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Web Development'],
   },
 ];
