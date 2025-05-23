@@ -94,9 +94,17 @@ const TimelineEvent = ({ item, index }: { item: TimelineItem, index: number }) =
   const IconComponent = item.icon || Star;
   const isEven = index % 2 === 0;
 
+  const cardClasses = `p-4 rounded-2xl my-4 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card mr-auto 
+    ${isEven 
+      ? 'md:col-start-1 md:col-span-3 md:ml-auto' 
+      : 'md:col-start-7 md:col-span-3 md:mr-auto'
+    }`;
+    
+  const iconContainerClasses = "hidden md:block col-start-5 col-end-6 md:mx-auto relative";
+
   return (
     <div className={`flex md:contents ${isEven ? '' : 'md:flex-row-reverse'}`}>
-      {!isEven && <div className="hidden md:block col-start-5 col-end-6 mr-auto md:mx-auto relative">
+      {!isEven && <div className={iconContainerClasses}>
         <div className="h-full w-6 flex items-center justify-center">
           <div className="h-full w-1 bg-border pointer-events-none"></div>
         </div>
@@ -104,7 +112,7 @@ const TimelineEvent = ({ item, index }: { item: TimelineItem, index: number }) =
            <IconComponent className="h-4 w-4 text-primary-foreground mx-auto my-1" />
         </div>
       </div>}
-      <Card className={`col-start-1 col-end-5 md:col-start-6 md:col-end-10 p-4 rounded-2xl my-4 mr-auto shadow-lg hover:shadow-xl transition-shadow duration-300 ${isEven ? 'md:ml-auto' : 'md:mr-auto'}`}>
+      <Card className={cardClasses}>
         <CardHeader className="p-0 mb-2">
           <div className="flex items-center mb-1">
             <IconComponent className="h-6 w-6 text-accent mr-3" />
@@ -117,7 +125,7 @@ const TimelineEvent = ({ item, index }: { item: TimelineItem, index: number }) =
           <p className="text-sm text-foreground leading-relaxed">{item.description}</p>
         </CardContent>
       </Card>
-      {isEven && <div className="hidden md:block col-start-5 col-end-6 md:mx-auto relative">
+      {isEven && <div className={iconContainerClasses}>
         <div className="h-full w-6 flex items-center justify-center">
           <div className="h-full w-1 bg-border pointer-events-none"></div>
         </div>
