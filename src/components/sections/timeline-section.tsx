@@ -83,8 +83,8 @@ const skillsData: Skill[] = [
   { id: 's5', name: 'Python', level: 85, icon: Code, description: "Utilizzo per scripting, automazione e sviluppo." },
   { id: 's6', name: 'JavaScript', level: 40, icon: Code, description: "Sviluppo web front-end e interattività." },
   { id: 's8', name: 'Matematica', level: 95, icon: Calculator, description: "Solide basi per problem solving e analisi." },
-  { id: 's7', name: 'Fisica e Chimica', level: 90, icon: FlaskConical, description: "Comprensione dei principi scientifici fondamentali." },
   { id: 's3', name: 'Sistemi Embedded (Arduino, ESP32)', level: 50, icon: Cpu, description: "Progettazione e programmazione di microcontrollori." },
+  { id: 's7', name: 'Fisica e Chimica', level: 90, icon: FlaskConical, description: "Comprensione dei principi scientifici fondamentali." },
   { id: 's4', name: 'Linux (Arch Linux, Hyprland)', level: 85, icon: Terminal, description: "Amministrazione di sistema e personalizzazione avanzata." },
   { id: 's1', name: 'Cybersecurity', level: 60, icon: Shield, description: "Studio della sicurezza informatica e difesa delle reti." },
   { id: 's9', name: 'Ethical Hacking', level: 25, icon: KeyRound, description: "Tecniche di penetration testing e vulnerability assessment." },
@@ -94,13 +94,13 @@ const TimelineEvent = ({ item, index }: { item: TimelineItem, index: number }) =
   const IconComponent = item.icon || Star;
   const isEven = index % 2 === 0;
 
-  const cardClasses = `p-4 rounded-2xl my-4 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card 
+  const cardClasses = `p-4 rounded-2xl my-4 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card md:col-span-3 
     ${isEven 
-      ? 'md:col-start-1 md:col-span-3' 
-      : 'md:col-start-7 md:col-span-3'
+      ? 'md:col-start-1' 
+      : 'md:col-start-7'
     }`;
     
-  const iconContainerClasses = "hidden md:block col-start-5 col-end-6 md:mx-auto relative";
+  const iconContainerClasses = "hidden md:block col-start-5 col-end-6 mx-auto relative";
 
   return (
     <div className={`flex md:contents ${isEven ? '' : 'md:flex-row-reverse'}`}>
@@ -187,3 +187,4 @@ export default function TimelineSection() {
     </section>
   );
 }
+
