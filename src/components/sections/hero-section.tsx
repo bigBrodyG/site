@@ -16,13 +16,14 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="max-w-3xl mx-auto">
           <div className="inline-block mb-8">
-            <Image 
-              src="/io.png" 
-              alt="Giordano Fornari Profile Picture" 
-              width={120} 
-              height={120} 
+            <Image
+              src="/profile-image.png"
+              alt="Giordano Fornari Profile Picture"
+              width={120}
+              height={120}
               data-ai-hint="profile person"
-              className="rounded-full shadow-xl border-4 border-accent/50 transform transition-transform duration-500 hover:scale-105" 
+              className="rounded-full shadow-xl border-4 border-accent/50 transform transition-transform duration-500 hover:scale-105"
+              priority
             />
           </div>
           
