@@ -80,14 +80,14 @@ const timelineData: TimelineItem[] = [
 
 const skillsData: Skill[] = [
   { id: 's2', name: 'Programmazione C', level: 95, icon: Code, description: "Competenze avanzate grazie agli insegnamenti del Prof. Ramon Ugolotti." },
-  { id: 's5', name: 'Python', level: 85, icon: Code },
-  { id: 's6', name: 'JavaScript', level: 40, icon: Code },
-  { id: 's8', name: 'Matematica', level: 95, icon: Calculator },
-  { id: 's7', name: 'Fisica e Chimica', level: 90, icon: FlaskConical },
-  { id: 's3', name: 'Sistemi Embedded (Arduino, ESP32)', level: 70, icon: Cpu },
-  { id: 's4', name: 'Linux (Arch Linux, Hyprland)', level: 85, icon: Terminal },
-  { id: 's1', name: 'Cybersecurity', level: 60, icon: Shield },
-  { id: 's9', name: 'Ethical Hacking', level: 35, icon: KeyRound },
+  { id: 's5', name: 'Python', level: 85, icon: Code, description: "Utilizzo per scripting, automazione e sviluppo." },
+  { id: 's6', name: 'JavaScript', level: 40, icon: Code, description: "Sviluppo web front-end e interattività." },
+  { id: 's8', name: 'Matematica', level: 95, icon: Calculator, description: "Solide basi per problem solving e analisi." },
+  { id: 's7', name: 'Fisica e Chimica', level: 90, icon: FlaskConical, description: "Comprensione dei principi scientifici fondamentali." },
+  { id: 's3', name: 'Sistemi Embedded (Arduino, ESP32)', level: 70, icon: Cpu, description: "Progettazione e programmazione di microcontrollori." },
+  { id: 's4', name: 'Linux (Arch Linux, Hyprland)', level: 85, icon: Terminal, description: "Amministrazione di sistema e personalizzazione avanzata." },
+  { id: 's1', name: 'Cybersecurity', level: 60, icon: Shield, description: "Studio della sicurezza informatica e difesa delle reti." },
+  { id: 's9', name: 'Ethical Hacking', level: 35, icon: KeyRound, description: "Tecniche di penetration testing e vulnerability assessment." },
 ];
 
 const TimelineEvent = ({ item, index }: { item: TimelineItem, index: number }) => {
