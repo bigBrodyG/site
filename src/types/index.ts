@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   title: string;
@@ -26,4 +27,10 @@ export interface Skill {
   level?: number; // Optional proficiency level (e.g., 1-5 or 1-100 for a progress bar)
   icon?: React.ElementType;
   description?: string; // Optional description for the skill
+}
+
+export interface CarouselImage {
+  src: string;
+  alt: string;
+  hint: string; // For data-ai-hint
 }
