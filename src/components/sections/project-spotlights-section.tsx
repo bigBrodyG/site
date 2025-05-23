@@ -12,7 +12,7 @@ const projectsData: Project[] = [
     title: 'Embedded Systems: Arduino & ESP32',
     description: "Exploration and development with Arduino and ESP32 microcontrollers, delving into hardware-software interaction.",
     longDescription: "From 2020 to 2024, I dedicated time to learning and experimenting with embedded systems, using platforms like Arduino and ESP32 to create small projects and understand microcontroller functionality.",
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://images.unsplash.com/photo-1603732551681-2e91159b9dc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhcmR1aW5vfGVufDB8fHx8MTc0ODAwOTQ0OXww&ixlib=rb-4.1.0&q=80&w=1080',
     imageAiHint: 'microcontroller circuit',
     tags: ['Arduino', 'ESP32', 'Microcontrollers', 'C/C++', 'Electronics'],
   },
@@ -32,7 +32,7 @@ const projectsData: Project[] = [
     longDescription: "This personal portfolio was developed using Next.js, TypeScript, ShadCN UI, and Tailwind CSS to apply my web development skills and present my story.",
     image: 'https://placehold.co/600x400.png',
     imageAiHint: 'website design code',
-    sourceCodeUrl: '#', 
+    sourceCodeUrl: '#',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'ShadCN UI', 'Web Development'],
   },
 ];
@@ -43,10 +43,11 @@ const ProjectCard = ({ project }: { project: Project }) => (
       <Image
         src={project.image}
         alt={project.title}
-        fill={true} 
-        style={{ objectFit: 'cover' }} 
+        fill={true}
+        style={{ objectFit: 'cover' }}
         data-ai-hint={project.imageAiHint}
         className="transition-transform duration-500 group-hover:scale-105"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
     </div>
     <CardHeader className="p-6">
