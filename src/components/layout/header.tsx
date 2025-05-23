@@ -25,7 +25,7 @@ export default function Header() {
           <div className="flex items-center cursor-pointer group">
             <Sparkles className="h-7 w-7 text-primary transition-transform duration-300 group-hover:rotate-12" />
             <span className="ml-2 text-xl font-semibold text-primary hover:text-accent transition-colors duration-300">
-              Personal Canvas
+              bigBrodyG
             </span>
           </div>
         </Link>

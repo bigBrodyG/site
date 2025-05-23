@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Giordano Fornari | My Journey',
+  title: 'bigBrodyG',
   description: 'Personal portfolio of Giordano Fornari, a computer science student passionate about science, technology, and cybersecurity.',
 };
 
