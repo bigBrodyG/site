@@ -1,3 +1,4 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -38,19 +39,41 @@ export default function ContactSection() {
   });
 
   async function onSubmit(data: ContactFormValues) {
-    // In a real app, you'd send this data to a backend or email service.
-    // For this demo, we'll simulate a successful submission.
-    console.log("Contact form submitted:", data);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch('https://formcarry.com/s/DFhgJbQorGP', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting me. I'll get back to you as soon as possible.",
-      variant: "default",
-    });
-    form.reset(); // Reset form after submission
+      const result = await response.json();
+
+      if (response.ok && result.code === 200) {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for contacting me. I'll get back to you as soon as possible.",
+          variant: "default",
+        });
+        form.reset();
+      } else {
+        toast({
+          title: "Error Sending Message",
+          description: result.message || "Something went wrong. Please try again.",
+          variant: "destructive",
+        });
+        console.error("Formcarry submission error:", result);
+      }
+    } catch (error) {
+      toast({
+        title: "Network Error",
+        description: "Could not send message. Please check your connection and try again.",
+        variant: "destructive",
+      });
+      console.error("Fetch error:", error);
+    }
   }
 
   return (
